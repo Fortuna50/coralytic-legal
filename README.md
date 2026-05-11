@@ -3,10 +3,10 @@
 Static site hosting for Coralytic's legal documents and support page.
 
 Live URLs (after GitHub Pages is enabled):
-- **Home**: https://burakozyer.github.io/coralytic-legal/
-- **Privacy Policy**: https://burakozyer.github.io/coralytic-legal/privacy.html
-- **Terms of Use**: https://burakozyer.github.io/coralytic-legal/terms.html
-- **Support**: https://burakozyer.github.io/coralytic-legal/support.html
+- **Home**: https://fortuna50.github.io/coralytic-legal/
+- **Privacy Policy**: https://fortuna50.github.io/coralytic-legal/privacy.html
+- **Terms of Use**: https://fortuna50.github.io/coralytic-legal/terms.html
+- **Support**: https://fortuna50.github.io/coralytic-legal/support.html
 
 ## Setup (one-time)
 
@@ -18,7 +18,7 @@ Live URLs (after GitHub Pages is enabled):
 ## Custom domain (optional, later)
 
 When `coralytic.app` is registered:
-1. Add CNAME record at domain registrar pointing to `burakozyer.github.io`
+1. Add CNAME record at domain registrar pointing to `fortuna50.github.io`
 2. In repo Settings → Pages → Custom domain: `coralytic.app`
 3. Update app's `PaywallFooter.swift` URLs from GitHub Pages to custom domain
 
