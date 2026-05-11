@@ -1,0 +1,204 @@
+/* Coralytic legal pages — matches in-app dark aesthetic */
+:root {
+  --bg: #0A0E1A;
+  --bg-elevated: #141B2D;
+  --cyan: #00D4FF;
+  --mint: #7FFFD4;
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-tertiary: rgba(255, 255, 255, 0.4);
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08), transparent 60%),
+    var(--bg);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.hero {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.brand-mark {
+  font-size: 28px;
+  color: var(--cyan);
+}
+
+.brand h1 {
+  font-family: -apple-system, "SF Pro Rounded", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, var(--cyan), var(--mint));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 17px;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 80px;
+}
+
+.card {
+  display: block;
+  padding: 20px 24px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.card h2 {
+  font-family: -apple-system, "SF Pro Rounded", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card p {
+  color: var(--text-tertiary);
+  font-size: 14px;
+}
+
+/* Document pages */
+.doc {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.doc-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.doc-header a {
+  color: var(--cyan);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.doc-header a:hover {
+  text-decoration: underline;
+}
+
+.doc h1 {
+  font-family: -apple-system, "SF Pro Rounded", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.doc .updated {
+  color: var(--text-tertiary);
+  font-size: 14px;
+}
+
+.doc h2 {
+  font-family: -apple-system, "SF Pro Rounded", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+  color: var(--cyan);
+}
+
+.doc h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+  color: var(--text);
+}
+
+.doc p,
+.doc li {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.doc ul,
+.doc ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.doc li {
+  margin-bottom: 6px;
+}
+
+.doc a {
+  color: var(--cyan);
+}
+
+.doc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
